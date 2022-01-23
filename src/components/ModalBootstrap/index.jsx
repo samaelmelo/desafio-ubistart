@@ -1,12 +1,15 @@
 import { useState } from 'react'
 import { Modal, Button } from 'react-bootstrap'
+import {BsCheckSquare} from "react-icons/bs"
+
+// import styles from "./styles.module.scss"
 
 export function ModalBootstrap({ drink }) {
   const [show, setShow] = useState(false)
 
   return (
     <>
-      <Button variant="primary" onClick={() => setShow(true)}>
+      <Button variant="primary" onClick={() => setShow(true)} className='backgroundButton'>
         Info
       </Button>
 
@@ -24,10 +27,13 @@ export function ModalBootstrap({ drink }) {
         <Modal.Body>
           <ul>
             <li>
-              <p>{drink.strInstructions}</p>
+              <p> {drink.strInstructions && <BsCheckSquare color="#00d600"/> } {drink.strInstructions} </p>
             </li>
             <li>
-              <p>{drink.strInstructionsIT}</p>
+              <p> {drink.strInstructionsIT && <BsCheckSquare color="#00d600"/>} {drink?.strInstructionsIT }</p>
+            </li>
+            <li>
+              <p> {drink.strInstructionsDE && <BsCheckSquare color="#00d600"/>}  {drink?.strInstructionsDE}</p>
             </li>
           </ul>
         </Modal.Body>

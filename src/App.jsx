@@ -1,24 +1,22 @@
-// import { Dashboard } from "./component/Dashboard";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import {Home} from "./Pages/Home"
-import {List} from "./Pages/List";
-import {AmountProvider} from "./hook/useAmount"
+import {Drink} from "./Pages/Drink";
+import {DrinksProvider} from "./hook/useDrinks"
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+
   return (
-  <AmountProvider>
+  <DrinksProvider>
     <Router>
       <Routes>
           <Route path="/" element={<Home/>}/>
-          {/* <Route path="/list" element={<List/>} /> */}
+          <Route path={`/drink/:drink`} element={<Drink/>} />
       </Routes>
-      
-
     </Router>
 
-    </AmountProvider>
+  </DrinksProvider>
   );
 }
 

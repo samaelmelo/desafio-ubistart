@@ -1,11 +1,12 @@
-.containerHeader{
+.containerHeader {
   width: 100%;
   height: 8rem;
-  background-color: var(--roxo);
-  
+  background: #1FA2FF; 
+  background: -webkit-linear-gradient(to top, #12D8FA, #1FA2FF);  
+  background: linear-gradient(to top, #12D8FA, #1FA2FF); 
 
 
-  .content{
+  .content {
     max-width: 1080px;
     height: 8rem;
     margin: 0 auto;
@@ -14,40 +15,86 @@
     justify-content: space-between;
     align-items: center;
 
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
+      padding: 5px 10px;
 
-    nav{
+      border: 1px solid rgba(238, 238, 238, 0.404);
+      border-radius: 0.25rem;
+      box-shadow: 0px 0px 5px rgba(8, 8, 8, 0.513);
+
+      background: #348f50; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #56b4d3,
+        #348f50
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #56b4d3,
+        #348f50
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      color: white;
+      cursor: pointer;
+
+      transition: 0.2s ease;
+
+      svg {
+        margin-right: 0.5rem;
+      }
+
+      &:hover {
+        letter-spacing: 1px;
+
+        filter: brightness(1.1);
+      }
+    }
+
+    svg {
+      cursor: pointer;
+    }
+
+    nav {
       color: #ccc;
       font-size: 1.3rem;
       font-weight: 500;
       display: flex;
-      gap: .5rem;
+      // flex-wrap: wrap;
+      gap: 0.5rem;
 
       // border: 1px solid red;
 
-      input, button{
+      input,
+      button {
         height: 1.5rem;
       }
 
-      input[type="text"]{
+      input[type='text'] {
         padding-left: 1rem;
         outline: none;
         border: none;
         font-size: 1rem;
-        border-radius: .23rem;
+        border-radius: 0.23rem;
+
+        width: 200px;
+        min-width: 100px;
       }
 
       input:focus {
         outline: 2px solid lightgreen;
       }
 
-      input::placeholder{
+      input::placeholder {
         font-size: 1rem;
         // padding-left: 1rem;
-        opacity: .5;
+        opacity: 0.5;
       }
 
-      button{
+      button {
         padding: 0.5rem 1rem;
 
         display: flex;
@@ -59,24 +106,25 @@
         border: none;
         border-radius: 0.23rem;
 
-        transition: .2s ease;
+        transition: 0.2s ease;
 
         background-color: lightslategrey;
 
         border: 1px solid rgba(255, 255, 255, 0.452);
         color: white;
-        svg{
+        svg {
           font-size: 1rem;
-          margin-right: .5rem;
+          margin-right: 0.5rem;
         }
 
-        &:hover{
+        &:hover {
           filter: brightness(1.1);
         }
+      }
 
+      @media (max-width: 768px) {
+        flex-direction: column;
       }
     }
-
-    
   }
 }

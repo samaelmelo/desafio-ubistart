@@ -1,0 +1,58 @@
+
+
+.description{
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.currency{
+  font-weight: 700;
+}
+
+
+
+.containerFooter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #131314c2;
+  
+  border-radius: .25rem;
+  height: 3rem;
+  margin-top: 1rem;
+  padding: .5rem;
+  
+  .containerSvg{
+    
+    svg{
+      color: #131314;
+      background-color: white;
+      font-size: 1.7rem;
+      padding: .4rem;
+      // margin-left: 1rem;
+      border-radius: .25rem;
+      cursor: pointer;
+    }
+
+    svg + svg {
+      margin-left: 1rem;
+    }
+
+  }
+
+}
+
+
+img{
+  width: 50%;
+  height: calc(100% - 8rem);
+
+
+  @media (max-width:768px){
+    width: 90%;
+  }
+
+}
