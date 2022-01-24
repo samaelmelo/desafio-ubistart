@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { Modal, Button } from 'react-bootstrap'
 import { BsCheckSquare } from 'react-icons/bs'
 
+import styles from "./styles.module.scss"
+
 interface CardsProps {
   drink: {
     strDrink: string
@@ -53,15 +55,30 @@ export function ModalBootstrap({ drink }: DrinksProps | CardsProps): JSX.Element
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <ul>
+          <ul className={styles.list}>
             <li>
               <p> {drink.strInstructions && <BsCheckSquare color="#00d600"/> } {drink.strInstructions} </p>
+            </li>
+            <li className={styles.border}>
+              <p> <BsCheckSquare color="#00d600"/> ingrediente 1</p>
+              <p> <BsCheckSquare color="#00d600"/> ingrediente 1</p>
+              <p> <BsCheckSquare color="#00d600"/> ingrediente 1</p>
             </li>
             <li>
               <p> {drink.strInstructionsIT && <BsCheckSquare color="#00d600"/>} {drink?.strInstructionsIT }</p>
             </li>
+            <li className={styles.border}>
+              <p>  <BsCheckSquare color="#00d600"/> ingrediente 1</p>
+              <p> <BsCheckSquare color="#00d600"/> ingrediente 1</p>
+              <p> <BsCheckSquare color="#00d600"/> ingrediente 1</p>
+            </li>
             <li>
               <p> {drink.strInstructionsDE && <BsCheckSquare color="#00d600"/>}  {drink?.strInstructionsDE}</p>
+            </li>
+            <li className={styles.border}>
+              <p> <BsCheckSquare color="#00d600"/> ingrediente 1</p>
+              <p> <BsCheckSquare color="#00d600"/> ingrediente 1</p>
+              <p> <BsCheckSquare color="#00d600"/> ingrediente 1</p>
             </li>
           </ul>
         </Modal.Body>

@@ -34,7 +34,10 @@ function Cards({ drink }: CardsProps | DrinksProps)  {
 
       <Card.Body>
         <h3>{drink.strDrink}</h3>
-        <Card.Title>{drink.strCategory}</Card.Title>
+        <div className={styles.between}>
+          <Card.Title>{drink.strCategory} </Card.Title>
+          <span>alcolico  </span>
+        </div>
         <Card.Text className={styles.description}>
           {drink.strInstructions}
         </Card.Text>

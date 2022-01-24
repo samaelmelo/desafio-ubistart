@@ -11,8 +11,10 @@
   text-overflow: ellipsis;
 }
 
-.currency {
-  font-weight: 700;
+.between{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .containerFooter {
