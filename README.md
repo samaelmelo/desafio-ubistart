@@ -15,6 +15,7 @@
 </p>
 
 <img align="center" src="./src/assets/app.png" slt="My App" />
+
 #
 
 ## 💻 Projeto
@@ -27,7 +28,7 @@ Esta aplicação foi desenvolvida em React com Typescript para cumprir o desafio
 - [x] Criar um nome para aplicação
 - [x] Sistema de busca conforme o [TheCocktailDB](https://www.thecocktaildb.com/api.php)
 - [x] Fluxo: categoria, drinks, detalhes dos drinks
-- [x] Sistema de pesquisa de Bibidas de forma aleatória 
+- [x] Sistema de pesquisa de bebidas de forma aleatória 
 - [x] Busca por nome do drink
 - [x] Validação por nomes de drinks errados
 - [x] Sistema de rotas
