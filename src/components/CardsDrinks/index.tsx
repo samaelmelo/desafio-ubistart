@@ -12,7 +12,7 @@ export function CardsDrinks() {
       .then(res => setDrinks(res.data.drinks))
       .catch(err => console.log(`Erro: ${err}`))
       
-    }, [])
+    })
   
   return (
     <>

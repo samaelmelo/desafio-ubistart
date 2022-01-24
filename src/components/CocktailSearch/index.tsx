@@ -6,7 +6,7 @@ import  Cards  from '../Cards'
 
 
 export function CocktailSearch() {
-  const { nameDrink, setNameDrink, newDrink } = useDrinks()
+  const { nameDrink, setNameDrink } = useDrinks()
 
   const drinkSaveInLocalStorage = window.localStorage.getItem('newDrink')
 
@@ -18,7 +18,7 @@ export function CocktailSearch() {
     return () => {
       window.document.title = 'Home | Challenge Ubistart'
     }
-  }, [newDrink])
+  })
 
   return (
     <>
