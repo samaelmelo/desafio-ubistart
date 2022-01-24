@@ -12,7 +12,7 @@ interface DrinksProps{
   strInstructions: string,
   strInstructionsIT?: string,
   strInstructionsDE?:string,
-  strDrinkThumb?: string
+  strDrinkThumb?: string,
 
 }
 
@@ -80,5 +80,5 @@ export function useDrinks() {
 
   return { newDrink, setNewDrink, nameDrink, setNameDrink, drinks, setDrinks }
 
-  // return context
+  
 }

@@ -1,6 +1,7 @@
 import React, {memo} from 'react'
 import { Card } from 'react-bootstrap'
 import { ModalBootstrap } from '../ModalBootstrap'
+
 import styles from '../CardsDrinks/styles.module.scss'
 
 interface CardsProps {
@@ -11,7 +12,8 @@ interface CardsProps {
     strInstructions: string
     strInstructionsIT: string | undefined
     strInstructionsDE: string | undefined
-    strDrinkThumb: string
+    strDrinkThumb: string,
+
   }
 }
 
@@ -23,7 +25,7 @@ interface DrinksProps{
     strInstructions: string,
     strInstructionsIT?: string,
     strInstructionsDE?:string,
-    strDrinkThumb?: string
+    strDrinkThumb?: string,
   }
 }
 
@@ -36,7 +38,7 @@ function Cards({ drink }: CardsProps | DrinksProps)  {
         <h3>{drink.strDrink}</h3>
         <div className={styles.between}>
           <Card.Title>{drink.strCategory} </Card.Title>
-          <span>alcolico  </span>
+          {/* <span>{drink.trAlcoholic}</span> */}
         </div>
         <Card.Text className={styles.description}>
           {drink.strInstructions}

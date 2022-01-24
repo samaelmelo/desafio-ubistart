@@ -40,7 +40,7 @@ export function ModalBootstrap({ drink }: DrinksProps | CardsProps): JSX.Element
         onClick={() => setShow(true)}
         className="backgroundButton"
       >
-        Info
+        More
       </Button>
 
       <Modal
@@ -59,26 +59,11 @@ export function ModalBootstrap({ drink }: DrinksProps | CardsProps): JSX.Element
             <li>
               <p> {drink.strInstructions && <BsCheckSquare color="#00d600"/> } {drink.strInstructions} </p>
             </li>
-            <li className={styles.border}>
-              <p> <BsCheckSquare color="#00d600"/> ingrediente 1</p>
-              <p> <BsCheckSquare color="#00d600"/> ingrediente 1</p>
-              <p> <BsCheckSquare color="#00d600"/> ingrediente 1</p>
-            </li>
             <li>
               <p> {drink.strInstructionsIT && <BsCheckSquare color="#00d600"/>} {drink?.strInstructionsIT }</p>
             </li>
-            <li className={styles.border}>
-              <p>  <BsCheckSquare color="#00d600"/> ingrediente 1</p>
-              <p> <BsCheckSquare color="#00d600"/> ingrediente 1</p>
-              <p> <BsCheckSquare color="#00d600"/> ingrediente 1</p>
-            </li>
             <li>
               <p> {drink.strInstructionsDE && <BsCheckSquare color="#00d600"/>}  {drink?.strInstructionsDE}</p>
-            </li>
-            <li className={styles.border}>
-              <p> <BsCheckSquare color="#00d600"/> ingrediente 1</p>
-              <p> <BsCheckSquare color="#00d600"/> ingrediente 1</p>
-              <p> <BsCheckSquare color="#00d600"/> ingrediente 1</p>
             </li>
           </ul>
         </Modal.Body>

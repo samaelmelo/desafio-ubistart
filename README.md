@@ -1,4 +1,4 @@
-<h1 align="center">Desafio Dev</h1>
+<h1 align="center">Desafio Ubistart</h1>
 <!-- <h2 align="center">Rocketseat - Ignite - ReactJS</h2> -->
 
 <!-- <h3 align="center">Chapter #2 - Challenge #2</h3> -->
@@ -7,36 +7,30 @@
   <a href="#hammer_and_wrench-Features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-How-to-execute">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-Licence">Licença</a>
+  <a href="#-Licence">Liceça</a>
 </p>
 
 <p align="center">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=069446&labelColor=000000">
 </p>
 
-
-<img align="center" src="./src/assets/APP.png" slt="My App" />
+<img align="center" src="./src/assets/app.png" slt="My App" />
 #
-
-<img align="center" src="./src/assets/addProduct.png" slt="My App" />
-
-#
-<img align="center" src="./src/assets/info do produto.png" slt="My App" />
-
-<!-- <video src="./src/assets/App.mp4" width="100%" autoplay></video> -->
 
 ## 💻 Projeto
 
-Esta aplicação foi desenvolvida em ReactJS para cumprir o desafio proposto na entrevista de emprego. Encontrei alguns contratempos em minha máquina quando fui utilizar o banco de dados MYQSL, diante disso optei por usar a tecnologia JSON-SERVER que possibilita criar uma REST API. Para consumir esta API utilizei a tecnologia AXIOS que é uma excelente cliente HTTP que possibilita fazer o CRUD da aplicação.   
+Esta aplicação foi desenvolvida em React com Typescript para cumprir o desafio proposto na entrevista de emprego da empresa Ubistart.  
 
 ## :hammer_and_wrench: Features
 
-- [x] Lista dos produtos cadastrados 
-- [x] Criar Produtos
-- [x] Editar Produtos Existentes
-- [x] Deletar Produtos
-
-
+- [x] Consumir endpoint [TheCocktailDB](https://www.thecocktaildb.com/api.php)
+- [x] Criar um nome para aplicação
+- [x] Sistema de busca conforme o [TheCocktailDB](https://www.thecocktaildb.com/api.php)
+- [x] Fluxo: categoria, drinks, detalhes dos drinks
+- [x] Sistema de pesquisa de Bibidas de forma aleatória 
+- [x] Busca por nome do drink
+- [x] Validação por nomes de drinks errados
+- [x] Sistema de rotas
 
 
 ## ✨ Tecnologias
@@ -44,19 +38,18 @@ Esta aplicação foi desenvolvida em ReactJS para cumprir o desafio proposto na 
 Este projeto foi desenvolvido com as tecnologias abaixo:
 
 - [React](https://reactjs.org)
-- [JavaScript](https://www.javascript.com/)
-- [JSON Server](https://github.com/typicode/json-server)
-- [Axios](https://axios-http.com)
+- [Typescript](https://www.typescriptlang.org/)
 - [React Icons](https://react-icons.github.io/react-icons)
 - [React Router DOM](https://reactrouter.com)
-- [Sass](https://sass-lang.com/)
 - [React Bootstrap](https://react-bootstrap.github.io/)
+- [React-Toastif](https://fkhadra.github.io/react-toastify/introduction)
+- [Sass](https://sass-lang.com/)
+- [Axios](https://axios-http.com)
 
 ## 🚀 Como executar o projeto
 
 - Clone o repositório
 - Instale as dependências com `yarn`
-- Execute o comando `yarn server`
 - Execute a aplicação com `yarn start`
 - Acesse [`localhost:3000`](http://localhost:3000) no seu navegador
 
