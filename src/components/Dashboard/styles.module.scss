@@ -1,8 +1,9 @@
-.containerMain{
+.containerMain {
   width: 100%;
-  height: calc(100vh - 8rem); 
+  min-height: 100vh;
+  height: calc(100% - 8rem);
 
-
+  padding-block: 0.5rem;
   padding-inline: 2rem;
 
   display: flex;
@@ -12,6 +13,4 @@
   gap: 1rem;
 
   flex: 1;
-
-
 }

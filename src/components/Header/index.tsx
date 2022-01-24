@@ -7,7 +7,7 @@ import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import styles from './styles.module.scss'
 
-export function Header(props) {
+export function Header() {
   const { newDrink, setNewDrink } = useDrinks()
 
   const params = useParams().drink
@@ -36,7 +36,7 @@ export function Header(props) {
         </Link>
       )
     } else {
-      return <a href="/">back to home</a>
+      return <a href="/">Back to home</a>
     }
   }
 

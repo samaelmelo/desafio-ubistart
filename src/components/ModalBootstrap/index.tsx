@@ -1,15 +1,43 @@
 import { useState } from 'react'
 import { Modal, Button } from 'react-bootstrap'
-import {BsCheckSquare} from "react-icons/bs"
+import { BsCheckSquare } from 'react-icons/bs'
 
-// import styles from "./styles.module.scss"
+interface CardsProps {
+  drink: {
+    strDrink: string
+    strInstructions: string
+    strInstructionsIT: string | undefined
+    strInstructionsDE: string | undefined
+    strDrinkThumb: string
+    strCategory:string,
 
-export function ModalBootstrap({ drink }) {
+  }
+}
+
+interface DrinksProps{
+  drink:{
+    idDrink: string,
+    strDrink: string,
+    strCategory:string,
+    strInstructions: string,
+    strInstructionsIT?: string,
+    strInstructionsDE?:string,
+    strDrinkThumb?: string
+  }
+
+}
+
+
+export function ModalBootstrap({ drink }: DrinksProps | CardsProps): JSX.Element{
   const [show, setShow] = useState(false)
 
   return (
     <>
-      <Button variant="primary" onClick={() => setShow(true)} className='backgroundButton'>
+      <Button
+        variant="primary"
+        onClick={() => setShow(true)}
+        className="backgroundButton"
+      >
         Info
       </Button>
 
